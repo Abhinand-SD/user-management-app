@@ -17,3 +17,9 @@ Admin login with validation
 View all users with search functionality
 Add, edit, and delete user data
 Session and cookie handling for security
+
+It demonstrates your full-stack development skills, including:
+✅ Authentication & Authorization (Login, Signup, Validation)
+✅ Database Integration (MongoDB)
+✅ Admin Panel (CRUD Operations, Search)
+✅ Session & Cookie Handling (Security Best Practices)
