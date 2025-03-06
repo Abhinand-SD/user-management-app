@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="/css/loginpages.css"/>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    
+    <div id="particles-js" class="snow"></div>
+
+    <main>
+       <div class="left-side"></div>
+      
+      <div class="right-side">
+        <form method="post" action="/user/register">
+
+        <input id="message" type="hidden" name="message" value="{{{message}}}" >
+
+        {{!-- <div class="btn-group">
+          <button class="btn">
+            <img class="logo" src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/d1c98974-c62d-4071-8bd2-ab859fc5f4e9" alt="" />
+            <span>Sign in with Google</span>
+          </button>
+          <button class="btn">
+            <img class="logo" src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/59c1561b-8152-4d05-b617-0680a7629a0e" alt="" />
+            <span>Sign in with Apple</span>
+          </button>
+        </div>
+
+        <div class="or">OR</div> --}}
+
+        <label for="email">Email</label>
+        <input id="email-field" type="text" placeholder="Enter Email" name="email" onkeyup="validateEmail()"/>
+        <span id="email-error" class="error-message" ></span><br> 
+
+        <label for="password">Password</label>
+        <input
+          id="password-field"
+          type="password"
+          placeholder="Enter Password"
+          name="password"  onkeyup="validatePassword()" /><span id="password-error" class="error-message" ></span><br>
+
+          <label for="password">Confirm Password</label>
+      <input
+        id="confirmPassword-field" 
+        type="password"
+        placeholder="Re-enter Password"
+        name="confirmPassword"  onkeyup="validateConfirmPassword()"
+      /><span id="confirmPassword-error" class="error-message"></span>
+
+        <button type="submit" class="login-btn" onclick=" return submitForm()" >Sign in</button><span id="submit-error" class="error-message"></span>
+        <div class="links">
+          <a href="/user/login">I have an account?</a>
+        </div>
+      </form>
+      </div>
+    </main>
+
+<script src='/js/form.js'></script>

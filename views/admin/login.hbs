@@ -1,0 +1,46 @@
+
+  <link rel="stylesheet" href="/css/loginpages.css"/>
+<div id="particles-js" class="snow"></div>
+<main>
+  <div class="left-side"></div>
+
+  <div class="right-side">
+    <form method="post" action="/admin/login" >
+
+    <input id="message" type="hidden" name="message" value="{{{message}}}" >
+
+      <h2 class="login-title" >Admin Login</h2><br><br>
+      <label for="email">Email</label>
+      <input id="email-field" type="text" placeholder="Enter Email" name="email" onkeyup="validateEmail()" />
+      <span id="email-error" class="error-message" ></span><br>
+
+      <label for="password">Password</label>
+      <input
+        id="password-field" 
+        type="password"
+        placeholder="Enter Password"
+        name="password"
+        onkeyup="validatePassword()"
+      />
+      <span id="password-error" class="error-message" ></span>
+
+      <button type="submit" class="login-btn">Sign in</button>
+  
+    </form>
+  </div>
+</main>
+<script src='/js/form.js'></script>
+
+
+{{!-- <link rel="stylesheet" href="/public/css/adminlogin.css">
+<div class="login-container"></div>
+        <h2>Admin Login</h2>
+        <form action="/admin/login" method="POST">
+            <input id="email-field" type="text" name="email" placeholder="Username"onkeyup="validateEmail()">
+            <span id="email-error" class="error-message" ></span><br>
+            <input id="password-field" type="password" name="password" placeholder="Password" onkeyup="validatePassword()">
+            <span id="password-error" class="error-message" ></span>
+            <button type="submit">Login</button>
+        </form>
+    </div> --}}
+    

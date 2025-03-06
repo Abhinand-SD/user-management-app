@@ -1,0 +1,24 @@
+body {
+    background-color: #000000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 10rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
